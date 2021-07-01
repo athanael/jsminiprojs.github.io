@@ -5,7 +5,7 @@ const horloge = function () {
   let minutes = date.getMinutes();
   let hours = date.getHours();
   let day = date.getDate();
-  let month = date.getMonth();
+  let month = date.getUTCMonth() + 1;
   let year = date.getFullYear();
 
   if (month == 1) {
