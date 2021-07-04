@@ -1,4 +1,5 @@
 let APIKEY = prompt("Merci de vous authentifier");
+
 document.querySelector("#button").addEventListener("click", function (e) {
   e.preventDefault();
   let ville = document.querySelector("#ville").value;
@@ -9,7 +10,7 @@ document.querySelector("#button").addEventListener("click", function (e) {
         if (data.cod == 400 || data.cod == 404) {
           alert("Cette ville n'existe pas");
         } else {
-          document.getElementById("city").innerText = ville;
+          document.getElementById("city").innerText = data.name;
           document.getElementById("temperature").innerText =
             parseInt(data.main.temp) + "°C";
           document.getElementById("weather").innerText =
