@@ -1,3 +1,4 @@
+import config from "./config";
 document.querySelector("#button").addEventListener("click", function (e) {
   e.preventDefault();
   const APIKEY = config.API_KEY;
