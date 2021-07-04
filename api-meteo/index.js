@@ -1,5 +1,4 @@
 let APIKEY = prompt("Merci de vous authentifier");
-
 document.querySelector("#button").addEventListener("click", function (e) {
   e.preventDefault();
   let ville = document.querySelector("#ville").value;
