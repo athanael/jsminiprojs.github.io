@@ -1,7 +1,7 @@
-const APIKEY = prompt("Merci de vous authentifier");
+let APIKEY = prompt("Merci de vous authentifier");
+
 document.querySelector("#button").addEventListener("click", function (e) {
   e.preventDefault();
-  console.log(config);
   let ville = document.querySelector("#ville").value;
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${ville}&appid=${APIKEY}&units=metric&lang=fr`;
   fetch(url)
