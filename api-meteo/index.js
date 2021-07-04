@@ -1,4 +1,3 @@
-import config from "./config.js";
 const APIKEY = prompt("Merci de vous authentifier");
 document.querySelector("#button").addEventListener("click", function (e) {
   e.preventDefault();
