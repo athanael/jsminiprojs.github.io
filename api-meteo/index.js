@@ -7,7 +7,6 @@ document.querySelector("#button").addEventListener("click", function (e) {
   fetch(url)
     .then((response) =>
       response.json().then((data) => {
-        console.log(data);
         if (data.cod == 400 || data.cod == 404) {
           alert("Cette ville n'existe pas");
         } else {
