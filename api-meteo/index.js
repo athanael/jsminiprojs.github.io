@@ -1,6 +1,7 @@
 document.querySelector("#button").addEventListener("click", function (e) {
   e.preventDefault();
   const APIKEY = config.API_KEY;
+  console.log(config);
   let ville = document.querySelector("#ville").value;
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${ville}&appid=${APIKEY}&units=metric&lang=fr`;
   fetch(url)
